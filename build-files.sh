@@ -1,5 +1,5 @@
 echo "Building the project..."
-pip install --disable-pip-version-check --target . --upgrade -r /vercel/path0/requirements.txt
+pip3.12 install --disable-pip-version-check --target . --upgrade -r /vercel/path0/requirements.txt
 
 
 echo "make migration..."
