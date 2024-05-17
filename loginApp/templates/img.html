@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static '/CSS/bootstrap.css'%}">
+    <style>
+        .sign-up-form {
+            max-width: 520px !important;
+            /* padding: 1rem; */
+        }
+
+        .sign-up-form .form-control {
+            border-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .sign-up-form .form-check-input {
+            border-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .sign-up-form .form-control:focus {
+            border-color: rgb(84, 168, 0);
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="{%static '/CSS/bootstrap.css'%}">
+    <div class="container-fluid row" style="margin:0;">
+        <h3 class="text-center my-5">Image</h3>
+        <form action="{% url 'image' %}" class="sign-up-form mx-auto" id="form" method="post">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                
+                <label for="email" class="my-3">Upload Image</label>
+                <input type="file" id="email" class="form-control" name="img">
+            </div>
+
+            <input type="submit" value="Upload" class="btn btn-primary w-100 text-white">
+
+        </form>
+    </div>
+
+    <script>
+    </script>
+    <script src="{%static '/JavaScript/bootstrap.js'%}"></script>
+</body>
+
+</html>
