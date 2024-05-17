@@ -86,7 +86,7 @@ DATABASES = {
          'PASSWORD': 'XSSqYagkebOKdWmkzlqqpZZVhQxQSiju',
          'HOST': 'viaduct.proxy.rlwy.net',
          'POST': '14085',
-    }
+    }}
 #import pymysql
 #pymysql.install_as_MySQLdb()
 
