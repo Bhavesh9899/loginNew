@@ -1,5 +1,4 @@
 echo "Building the project..."
-pip install --upgrade pip
 pip install --disable-pip-version-check --target . --upgrade -r requirements.txt
 
 
