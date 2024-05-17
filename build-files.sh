@@ -1,4 +1,5 @@
 echo "Building the project..."
+pip install --upgrade pip
 pip install --target . --upgrade -r requirements.txt
 
 echo "make migration..."
