@@ -17,7 +17,7 @@ from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-print(BASE_DIR)
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -87,7 +87,9 @@ DATABASES = {
 #         'HOST': 'localhost',
 #         'POST': '3306',
     }
-}
+import pymysql
+pymysql.install_as_MySQLdb()
+
 DATABASES['default'] = dj_database_url.config()
 
 
