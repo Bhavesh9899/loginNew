@@ -1,5 +1,6 @@
 echo "Building the project..."
-pip install -r requirements.txt
+pip install --disable-pip-version-check --target . --upgrade -r /vercel/path0/requirements.txt
+
 
 echo "make migration..."
 python manage.py makemigrations --noinput
