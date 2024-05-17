@@ -80,17 +80,17 @@ WSGI_APPLICATION = 'login.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR/'db.sqlite3',
-#         'USER': 'id21283149_bhavesh',
-#         'PASSWORD': 'Bh@vesh_9899',
-#         'HOST': 'localhost',
-#         'POST': '3306',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',
+         'USER': 'root',
+         'PASSWORD': 'XSSqYagkebOKdWmkzlqqpZZVhQxQSiju',
+         'HOST': 'viaduct.proxy.rlwy.net',
+         'POST': '14085',
     }
-import pymysql
-pymysql.install_as_MySQLdb()
+#import pymysql
+#pymysql.install_as_MySQLdb()
 
-DATABASES['default'] = dj_database_url.config()
+#DATABASES['default'] = #dj_database_url.config()
 
 
 # Password validation
